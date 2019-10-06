@@ -9,7 +9,10 @@ Sleigh::Sleigh(string brand, string model, int reindeerCount)
 {
 	setBrand(brand);
 	setModel(model);
-	setReindeerCount(reindeerCount);
+	if (reindeerCount > 0)
+		setReindeerCount(reindeerCount);
+	else
+		setReindeerCount(1);
 	//Seed random for mileage calculation
 	srand(time(0));
 }
