@@ -1,0 +1,103 @@
+A. 
+    Jason@Jason-PC MINGW64 /e/Git_Repos/assignment2 (master)
+    $ cd docs
+
+    Jason@Jason-PC MINGW64 /e/Git_Repos/assignment2/docs (master)
+    $ ls
+    status.txt
+
+    Jason@Jason-PC MINGW64 /e/Git_Repos/assignment2/docs (master)
+    $ git add status.txt
+
+    Jason@Jason-PC MINGW64 /e/Git_Repos/assignment2/docs (master)
+    $ git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    Changes to be committed:
+    (use "git reset HEAD <file>..." to unstage)
+
+            new file:   status.txt
+
+
+    Jason@Jason-PC MINGW64 /e/Git_Repos/assignment2/docs (master)
+    $ git commit
+    [master f136d92] Add status.txt
+    1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 docs/status.txt
+
+    Jason@Jason-PC MINGW64 /e/Git_Repos/assignment2/docs (master)
+    $ git push
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (4/4), 354 bytes | 354.00 KiB/s, done.
+    Total 4 (delta 1), reused 1 (delta 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/Jakuu/assignment2.git
+    c8659b2..f136d92  master -> master
+
+    Jason@Jason-PC MINGW64 /e/Git_Repos/assignment2/docs (master)
+    $
+
+
+B. 
+    9; command used "git rev-list HEAD --count"
+    can also use git shortlog and manually add the # of commits
+    by each user manually.
+
+C.
+    Wed Sep 25 18:13:30 2019
+    command used "git log .gitignore"
+
+D.
+    Reason 1.
+        Branches isolate development of different "features" so that each
+        develops independently of eachother, allowing for better version control
+        as the main branch version history remains cleaner as featured are merged back
+        as they are completed.
+    Reason 2.
+        As an extension of reason 1, since development is isolated, there is always
+        one working "main" copy maintained at all times, bugs in one development branch
+        will not impact functionality or development of features in other branches, nor will
+        it break the main, functional, branch.
+
+E.
+    Git log shows commit history, git status shows pending changes
+    and differences from the remote.
+
+F.
+    git log --follow Vehicle.h 
+
+G.
+    git log -g --grep=file
+
+H.
+    Inheritance is the ability to create a "child" class from a base,
+    that retains the same properties/methods as defined in the parent class,
+    however their implementation may be overriden.
+
+    Polymorphism is the ability for multiple types of objects to be accessed
+    through a common "interface", interfaces simply define what things should
+    be callable by anything that implements it, while each object type implements
+    those functions in their own way. For example, a TV interface may define the
+    "turn on" and "turn off" functions, but leaves the way for the TV to actually turn on
+    up to the implementation of each "TV" subclass.
+
+    Encapsulation is the ability to hide or abstract the internal workings of your objects
+    away from end users, or unwanted access. For example, instead of allowing direct access
+    to a "data" object within your class, you create get and set functions to restrict
+    what operations are allowed on the "data" object, thus "encapsulating" it.
+
+I.
+    The integration manager workflow has one central "integration manager" that merges in all
+    changes from each developer's public repositories, and also pushes to the main "blessed" repo,
+    while the Dictator/Lieutenant workflow has several Lieutenant repos that merge in changes from
+    a few developers each, before the Dictator merges the Lieutenant repo changes and pushes to the
+    "blessed" repo.
+
+J.
+    A large development team would benefit from the Dictator/Lieutenant workflow since each Lieutenant
+    would only have to merge changes from a few developers, and then the Dictator only has to merge changes
+    from a few lieutenants, rather than one Integration manager having to merge 100's of developers changes at once.
