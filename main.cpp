@@ -27,6 +27,8 @@ int main() {
 	//Test deer constructor with invalid deer count
 	vehiclesArray[9] = new Sleigh("BadSleds", "SlowSleighs", "0");
 
+	testConstructorValidation(vehiclesArray);
+
     printVehiclesRoster(vehiclesArray, size);
 
     if (vehiclesArray != 0) { // If it is not a null pointer
@@ -39,7 +41,7 @@ int main() {
     return 0;
 }
 
-void testConstructorValidation(Vehicle** vehiclesArray, int size)
+void testConstructorValidation(Vehicle** vehiclesArray)
 {
 	double dist = 5;
 	cout << "\nShould return 8 deer: " + vehiclesArray[8]->mileageEstimate(dist) << endl;
