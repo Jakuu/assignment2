@@ -45,6 +45,7 @@ void Jet::setNumberOfEngines(int engines)
 
 double Jet::mileageEstimate(double time)
 {
+	//Use pre-generated randMileage variable
 	double mileage = time * randMileage;
 	//Increase mileage if rocket fuel and >2 engines
 	if (fuelType == "Rocket" && numEngines > 2)
