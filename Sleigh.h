@@ -6,8 +6,10 @@
 class Sleigh : public Vehicle
 {
 private:
+	//Number of reindeer pulling the sleigh
 	int myReindeerCount;
 public:
+	//Must be at least one reindeer for the sleigh to move
 	explicit Sleigh(string brand, string model, int reindeerCount = 1);
 
 	virtual ~Sleigh();
