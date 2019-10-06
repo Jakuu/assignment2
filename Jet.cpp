@@ -57,6 +57,5 @@ double Jet::mileageEstimate(double time)
 
 string Jet::toString()
 {
-	return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of Engines: " +
-		getNumberOfEngines();
+	return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of Engines: " + to_string(getNumberOfEngines());
 }
