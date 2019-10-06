@@ -1,5 +1,6 @@
 #include "Jet.h"
 //Includes for random functionality
+//includes and usage taken from cplusplus.com/reference/cstdlib/rand/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
