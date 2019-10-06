@@ -11,3 +11,4 @@ cmake-build-debug/
 .vs/assignment2/v16/Browse.VC.opendb
 .vs/assignment2/v16/Browse.VC.db
 .vs/assignment2/v16/.suo
+*.ipch
